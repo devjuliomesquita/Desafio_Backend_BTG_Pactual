@@ -1,0 +1,8 @@
+org\juliomesquita\commom\dtos\OrderItemRequest.class
+org\juliomesquita\commom\dtos\OrderResponse.class
+org\juliomesquita\commom\dtos\PaginationGeneric.class
+org\juliomesquita\commom\dtos\ApiResponseGeneric.class
+org\juliomesquita\commom\constants\RabbitMqConstants.class
+org\juliomesquita\commom\dtos\OrderRequest.class
+org\juliomesquita\commom\interfaces\BaseUsecase.class
+org\juliomesquita\commom\interfaces\RabbitMqConsumer.class

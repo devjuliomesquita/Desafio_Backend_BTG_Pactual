@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: order_consumer
+  data:
+    mongodb:
+      authentication-database: admin
+      auto-index-creation: true
+      host: localhost
+      port: 27017
+      database: btg_db
+      username: local
+      password: local
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: rabbitmq
+    password: rabbitmq
+server:
+  port: 1234

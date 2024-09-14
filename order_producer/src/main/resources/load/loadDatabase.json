@@ -1,0 +1,130 @@
+[
+  {
+    "codigoPedido": 4351,
+    "codigoCliente": 5,
+    "itens": [
+      {
+        "produto": "ProductA",
+        "quantidade": 3,
+        "preco": 37.86
+      },
+      {
+        "produto": "ProductB",
+        "quantidade": 4,
+        "preco": 27.44
+      }
+    ]
+  },
+  {
+    "codigoPedido": 6592,
+    "codigoCliente": 2,
+    "itens": [
+      {
+        "produto": "ProductE",
+        "quantidade": 4,
+        "preco": 25.32
+      },
+      {
+        "produto": "ProductD",
+        "quantidade": 3,
+        "preco": 21.19
+      },
+      {
+        "produto": "ProductC",
+        "quantidade": 1,
+        "preco": 23.75
+      }
+    ]
+  },
+  {
+    "codigoPedido": 8419,
+    "codigoCliente": 8,
+    "itens": [
+      {
+        "produto": "ProductD",
+        "quantidade": 1,
+        "preco": 24.19
+      },
+      {
+        "produto": "ProductD",
+        "quantidade": 4,
+        "preco": 19.65
+      }
+    ]
+  },
+  {
+    "codigoPedido": 9012,
+    "codigoCliente": 7,
+    "itens": [
+      {
+        "produto": "ProductA",
+        "quantidade": 3,
+        "preco": 10.76
+      },
+      {
+        "produto": "ProductE",
+        "quantidade": 5,
+        "preco": 9.91
+      }
+    ]
+  },
+  {
+    "codigoPedido": 5381,
+    "codigoCliente": 8,
+    "itens": [
+      {
+        "produto": "ProductA",
+        "quantidade": 4,
+        "preco": 32.26
+      }
+    ]
+  },
+  {
+    "codigoPedido": 2962,
+    "codigoCliente": 1,
+    "itens": [
+      {
+        "produto": "ProductC",
+        "quantidade": 1,
+        "preco": 9.75
+      },
+      {
+        "produto": "ProductD",
+        "quantidade": 1,
+        "preco": 47.66
+      }
+    ]
+  },
+  {
+    "codigoPedido": 4037,
+    "codigoCliente": 4,
+    "itens": [
+      {
+        "produto": "ProductA",
+        "quantidade": 2,
+        "preco": 43.81
+      },
+      {
+        "produto": "ProductE",
+        "quantidade": 4,
+        "preco": 48.04
+      }
+    ]
+  },
+  {
+    "codigoPedido": 7363,
+    "codigoCliente": 3,
+    "itens": [
+      {
+        "produto": "ProductC",
+        "quantidade": 2,
+        "preco": 33.47
+      },
+      {
+        "produto": "ProductE",
+        "quantidade": 5,
+        "preco": 25.69
+      }
+    ]
+  }
+]
