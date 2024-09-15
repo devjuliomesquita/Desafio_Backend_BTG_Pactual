@@ -8,8 +8,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,7 +15,7 @@ import java.util.Objects;
 
 @RestController
 @RequestMapping(value = "orders")
-public class OrderProducerController {
+public class OrderProducerController implements OrderProducerControllerDoc {
     private final Logger logger = LoggerFactory.getLogger(OrderProducerController.class);
     private final RabbitMqService rabbitMqService;
 
@@ -25,10 +23,15 @@ public class OrderProducerController {
         this.rabbitMqService = Objects.requireNonNull(rabbitMqService);
     }
 
-    @PostMapping
-    public ResponseEntity<?> createOrder(@RequestBody OrderRequest request){
-        logger.info("Request sent: {}", request);
-        this.rabbitMqService.sendMessage(RabbitMqConstants.QUEUE_ORDER, request);
-        return new ResponseEntity<>(HttpStatus.OK);
+    @Override
+    public ResponseEntity<?> createOrder(OrderRequest request) {
+        try {
+            logger.info("Request sent: {}", request);
+            this.rabbitMqService.sendMessage(RabbitMqConstants.QUEUE_ORDER, request);
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (Throwable t){
+            logger.error("Error message: {}", t.getMessage(), t);
+            return ResponseEntity.internalServerError().body(t.getCause());
+        }
     }
 }
